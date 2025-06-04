@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1749042036 source:g:\c++ projects\richardson-improved\main.cpp
+	<iostream>
+	<complex>
+	<iomanip>
+	<fstream>
+	"solver.h"
+
+1746177673 source:g:\c++ projects\richardson-improved\solver.cpp
+	<iostream>
+	<complex>
+	<cmath>
+	"solver.h"
+
+1738962380 g:\c++ projects\richardson-improved\solver.h
+	<complex>
+
