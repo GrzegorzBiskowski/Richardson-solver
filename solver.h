@@ -28,7 +28,7 @@ public:
     cEquations(int dims, std::complex<double> *lambdas, std::complex<double> *energies, double g);
     ~cEquations();
     std::complex<double> function_i(std::complex<double> *x_vector, int i_index);
-    void newton_rhapson(std::complex<double> *init_guess);
+    void newton_raphson(std::complex<double> *init_guess);
 
 };
 

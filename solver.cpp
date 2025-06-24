@@ -154,7 +154,7 @@ cEquations::cEquations(int dims, std::complex<double> *lambdas, std::complex<dou
         eq_lambdaData[i] = lambdas[i];
         eq_energiesData[i] = energies[i];
     }
-    newton_rhapson(lambdas);
+    newton_raphson(lambdas);
 }
 
 cEquations::~cEquations()
@@ -182,7 +182,7 @@ std::complex<double> cEquations::function_i(std::complex<double> *x_vector, int 
     return pow(*(x_vector+i_index),2)-(eq_g*sum)-(*(x_vector+i_index));
 }
 
-void cEquations::newton_rhapson(std::complex<double> *init_guess)
+void cEquations::newton_raphson(std::complex<double> *init_guess)
 {
     double PREC = 0.000001;
     std::complex<double> jacobian_matrix[eq_dims][eq_dims] = {0};
